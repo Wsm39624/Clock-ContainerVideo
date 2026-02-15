@@ -1,0 +1,72 @@
+/* body {
+    background-image: url(pic1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;       
+    margin: 0;              
+}   
+#clock-container {              
+    display: flex;              
+    justify-content: center;              
+    align-items: center;              
+    height: 100vh;                           
+}
+#clock {              
+    font-family: monospace;              
+    font-size: 90px;
+    font-weight: bold;       
+    color: #057faf; 
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.055);                         
+    padding: 20px;              
+} */
+
+/* استيراد الخط الرقمي (اختياري إذا أردت استخدامه) */
+/* استيراد الخط الرقمي (اختياري إذا أردت استخدامه) */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* تنسيق الفيديو ليصبح خلفية */
+ #myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    transform: translate(-50%, -50%);
+    
+    object-fit: cover; 
+    
+    z-index: -1;
+} 
+
+#clock-container {              
+    display: flex;              
+    justify-content: center;              
+    align-items: center;              
+    height: 100vh;                           
+}
+
+#clock {              
+    font-family: 'Orbitron', monospace; 
+    font-size: 90px;
+    font-weight: bold;       
+    color: #057faf; 
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.1);                         
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
